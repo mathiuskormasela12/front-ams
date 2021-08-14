@@ -21,16 +21,24 @@ export function NavbarHorizontal(props) {
 				<nav className={styled['nav-dark']}>
 					<Container inheritHeight>
 						<ul className={`${styled['nav-list']} ${styled['flex-end']}`}>
+							{
+								props.show && (
+									<Fragment>
+										<li className={styled['nav-items']}>
+											<SearchField placeholder="Search..." />
+										</li>
+									</Fragment>
+								)
+							}
 							<li className={styled['nav-items']}>
-								<SearchField placeholder="Search..." />
-							</li>
-							<li className={styled['nav-items']}>
-								<figure className={styled.figure}>
-									<img src={user} alt="User" className={styled.img} />
-									<figcaption className={styled.figcaption}>
-										Mathius
-									</figcaption>
-								</figure>
+								<form>
+									<figure className={styled.figure}>
+										<img src={user} alt="User" className={styled.img} />
+										<figcaption className={styled.figcaption}>
+											Mathius
+										</figcaption>
+									</figure>
+								</form>
 							</li>
 						</ul>
 					</Container>

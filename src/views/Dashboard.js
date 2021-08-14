@@ -14,7 +14,6 @@ import {
 class Dashboard extends Component {
 	componentDidMount() {
 		document.title = 'Ams | Dashboard';
-		console.log(process.env.REACT_APP_API_URL);
 	}
 	
 	render() {
@@ -25,7 +24,7 @@ class Dashboard extends Component {
 						<Navbar active="dashboard" />
 						<Sidebar>
 							<Container fluid>
-								<NavbarHorizontal title="Dashboard" />
+								<NavbarHorizontal title="Dashboard" show/>
 							</Container>
 						</Sidebar>
 					</Container>

@@ -10,7 +10,7 @@ import persistedStore from './redux/store';
 import './global/style.module.scss';
 
 // import all views
-import Home from './views/Home';
+import Dashboard from './views/Dashboard';
 
 function Router() {
 	const { store, persistor } = persistedStore()
@@ -19,7 +19,7 @@ function Router() {
 			<PersistGate persistor={persistor}>
 				<BrowserRouter>
 					<Switch>
-						<Route path="/" exact component={Home} />
+						<Route path="/" exact component={Dashboard} />
 					</Switch>
 				</BrowserRouter>
 			</PersistGate>

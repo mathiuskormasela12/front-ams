@@ -14,7 +14,7 @@ import styled from './style.module.scss';
 // import assets
 import user from '../../assets/img/10250.JPG';
 
-export function NavbarHorizontal() {
+export function NavbarHorizontal(props) {
 	return (
 		<Fragment>
 			<div className={styled['navbar-horizontal']}>
@@ -39,7 +39,9 @@ export function NavbarHorizontal() {
 					<Container inheritHeight width={95}>
 						<ul className={styled['nav-list']}>
 							<li className={styled['nav-items']}>
-								<h6 className={styled.title}>Dashboard</h6>
+								<h6 className={styled.title}>
+									{ props.title }
+								</h6>
 							</li>
 						</ul>
 					</Container>

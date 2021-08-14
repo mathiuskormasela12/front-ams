@@ -11,9 +11,9 @@ import {
 	NavbarHorizontal
 } from '../components';
 
-class Home extends Component {
+class Dashboard extends Component {
 	componentDidMount() {
-		document.title = 'Ams | Home';
+		document.title = 'Ams | Dashboard';
 		console.log(process.env.REACT_APP_API_URL);
 	}
 	
@@ -22,10 +22,10 @@ class Home extends Component {
 			<Fragment>
 				<Hero>
 					<Container fluid>
-						<Navbar />
+						<Navbar active="dashboard" />
 						<Sidebar>
 							<Container fluid>
-								<NavbarHorizontal />
+								<NavbarHorizontal title="Dashboard" />
 							</Container>
 						</Sidebar>
 					</Container>
@@ -35,4 +35,4 @@ class Home extends Component {
 	}
 }
 
-export default Home;
+export default Dashboard;

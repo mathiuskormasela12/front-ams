@@ -3,19 +3,33 @@
 import React, { Component, Fragment } from 'react';
 
 // import all components
-import { Container } from '../components';
+import { 
+	Container,
+	Sidebar,
+	Navbar,
+	Hero,
+	NavbarHorizontal
+} from '../components';
 
 class Home extends Component {
 	componentDidMount() {
 		document.title = 'Ams | Home';
+		console.log(process.env.REACT_APP_API_URL);
 	}
 	
 	render() {
 		return (
 			<Fragment>
-				<Container>
-					<h1>Hello</h1>
-				</Container>
+				<Hero>
+					<Container fluid>
+						<Navbar />
+						<Sidebar>
+							<Container fluid>
+								<NavbarHorizontal />
+							</Container>
+						</Sidebar>
+					</Container>
+				</Hero>
 			</Fragment>
 		);
 	}

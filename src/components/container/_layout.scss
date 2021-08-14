@@ -1,9 +1,22 @@
-.container {
-	width: 90%;
-	margin: 0 auto;
-}
+// ========== Layout Container
 
-.container-fluid {
-	width: 100%;
-	margin: 0 auto;
+.container {
+	.normal-container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	.fluid {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.inherit-height {
+		height: inherit;
+	}
+	
+	.inherit-width {
+		width: inherit;
+	}
+	
 }

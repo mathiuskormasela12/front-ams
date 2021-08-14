@@ -1,0 +1,11 @@
+// ========== Layout Sidebar
+
+.sidebar {
+	aside.aside {
+		background-color: $gray;
+		min-height: 100vh;
+		position: absolute;
+		width: 85%;
+		right: 0;
+	}
+}

@@ -1,0 +1,12 @@
+// ========== Layout Navbar
+
+.navbar {
+	.nav {
+		height: 100vh;
+		position: fixed;
+		width: 15%;
+		background-color: white;
+		z-index: 100;
+		box-shadow: 1px 1px 10px -6px black;
+	}
+}

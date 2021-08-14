@@ -1,0 +1,59 @@
+// ========== Layout Navbar Horizontal
+
+.navbar-horizontal {
+	%nav {
+		width: 100%;
+		position: relative;
+		height: 3.5rem;
+	}
+	
+	.nav-dark {
+		@extend %nav;
+		background-color: $dark;
+	}
+	
+	.nav-light {
+		@extend %nav;
+		background-color: white;
+	}
+	
+	.nav-list {
+		display: flex;
+		width: 100%;
+		list-style: none;
+		height: 3.5rem;
+		align-items: center;
+	}
+	
+	.flex-end {
+		justify-content: flex-end;
+	}
+	
+	.nav-items {
+		margin-right: 2rem;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	.img {
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+	}
+	
+	.figure {
+		display: flex;
+		align-items: center;
+	
+		.figcaption {
+			color: white;
+			margin-left: .8rem;
+		}
+	}
+	
+	.title {
+		font-size: 1.3rem;
+		text-transform: uppercase;
+	}
+}

@@ -19,3 +19,23 @@
 		}
 	}
 }
+
+@media screen and (min-width: 768px) and (max-width: 920px) and (min-height: 1024px) {
+	.navbar-horizontal {
+		ul.nav-list > .nav-items:first-child {
+			display: block;
+		}
+
+		ul.nav-list > .nav-items:only-child {
+			display: block;
+		}
+
+		div.brand {
+			display: none;
+		}
+
+		.flex-end {
+			justify-content: flex-end;
+		}
+	}
+}

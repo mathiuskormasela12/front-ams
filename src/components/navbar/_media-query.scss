@@ -15,7 +15,7 @@
 	}
 }
 
-@media screen and (min-width: 600px) and (max-width: 920px) and (orientation: portrait) {
+@media screen and (min-width: 600px) and (max-width: 768px) and (orientation: portrait) {
 	.navbar {
 		.nav {
 			width: 28%;
@@ -23,7 +23,7 @@
 	}
 }
 
-@media screen and (min-width: 600px) and (max-width: 920px) and (orientation: landscape) {
+@media screen and (min-width: 600px) and (max-width: 768px) and (orientation: landscape) {
 	.navbar {
 		.nav {
 			width: 16rem;
@@ -34,6 +34,22 @@
 
 		.show {
 			transform: translateX(0) !important;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 920px) and (orientation: portrait) {
+	.navbar {
+		.nav {
+			width: 27%;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 920px) and (orientation: landscape) {
+	.navbar {
+		.nav {
+			width: 23%;
 		}
 	}
 }

@@ -1,1 +1,16 @@
 // ========== Responsive Navbar
+
+@media screen and (max-width: 600px) {
+	.navbar {
+		.nav {
+			width: 15rem;
+			z-index: 200;
+			transform: translateX(-15rem);
+			transition: .5s transform;
+		}
+
+		.show {
+			transform: translateX(0) !important;
+		}
+	}
+}

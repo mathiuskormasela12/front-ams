@@ -1,8 +1,15 @@
 // ========== Navbar
 // import all modules
 import React, { Fragment } from 'react';
-import { FaRegClock, FaSignOutAlt, FaUserAlt, FaUserGraduate, FaUserPlus } from 'react-icons/fa';
+import { 
+	FaRegClock, 
+	FaSignOutAlt, 
+	FaUserAlt, 
+	FaUserGraduate, 
+	FaUserPlus 
+} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 // import all components
 import {
@@ -16,10 +23,12 @@ import styled from './style.module.scss';
 import logo from '../../assets/img/logo12.png';
 
 export function Navbar(props) {
+	const toggle = useSelector(currentState => currentState.toggle.toggle);
+
 	return (
 		<Fragment>
 			<div className={styled.navbar}>
-				<nav className={styled.nav}>
+				<nav className={`${styled.nav} ${toggle && styled.show}`}>
 					<Container fluid>
 						<div className={styled.header}>
 							<figure className={styled.figure}>

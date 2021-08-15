@@ -1,1 +1,21 @@
 // ========== Responsive Navbar
+
+@media screen and (max-width: 600px) {
+	.navbar-horizontal {
+		ul.nav-list > .nav-items:first-child {
+			display: none;
+		}
+
+		ul.nav-list > .nav-items:only-child {
+			display: block;
+		}
+
+		div.brand {
+			display: block;
+		}
+
+		.flex-end {
+			justify-content: flex-start;
+		}
+	}
+}

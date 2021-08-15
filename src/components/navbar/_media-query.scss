@@ -61,3 +61,43 @@
 		}
 	}
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+	.navbar {
+		.nav {
+			width: 22%;
+		}
+	}
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+	.navbar {
+		.nav {
+			width: 20%;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+	.navbar {
+		.nav {
+			width: 18%;
+		}
+	}
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1400px) {
+	.navbar {
+		.nav {
+			width: 18%;
+		}
+	}
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+	.navbar {
+		.nav {
+			width: 17%;
+		}
+	}
+}

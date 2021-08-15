@@ -3,14 +3,45 @@
 @media screen and (max-width: 600px) {
 	.navbar {
 		.nav {
-			width: 15rem;
+			width: 16rem;
 			z-index: 200;
-			transform: translateX(-15rem);
+			transform: translateX(-16rem);
 			transition: .5s transform;
 		}
 
 		.show {
 			transform: translateX(0) !important;
+		}
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 920px) and (orientation: portrait) {
+	.navbar {
+		.nav {
+			width: 28%;
+		}
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 920px) and (orientation: landscape) {
+	.navbar {
+		.nav {
+			width: 16rem;
+			z-index: 200;
+			transform: translateX(-16rem);
+			transition: .5s transform;
+		}
+
+		.show {
+			transform: translateX(0) !important;
+		}
+	}
+}
+
+@media screen and (min-width: 920px) and (max-width: 1024px) {
+	.navbar {
+		.nav {
+			width: 22%;
 		}
 	}
 }

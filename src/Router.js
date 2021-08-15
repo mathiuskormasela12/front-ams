@@ -7,7 +7,7 @@ import { PersistGate } from 'redux-persist/lib/integration/react';
 import persistedStore from './redux/store';
 
 // import global style
-import './global/style.module.scss';
+import './global/style.scss';
 
 // import all views
 import Dashboard from './views/Dashboard';

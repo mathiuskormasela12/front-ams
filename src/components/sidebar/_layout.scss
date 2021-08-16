@@ -5,7 +5,7 @@
 		background-color: $gray;
 		min-height: 100vh;
 		position: absolute;
-		width: 84.8%;
+		width: calc(100% - 15rem);
 		right: 0;
 	}
 }

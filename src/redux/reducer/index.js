@@ -7,7 +7,6 @@ import hardSet from 'redux-persist/es/stateReconciler/hardSet';
 
 // import all reducers
 import authReducer from './auth';
-import toggleReducer from './toggle';
 
 const rootPersistConfig = {
 	key: 'root',
@@ -23,7 +22,6 @@ const authPersistConfig = {
 
 const rootReducer = combineReducers({
 	auth: persistReducer(authPersistConfig, authReducer),
-	toggle: toggleReducer
 });
 
 export default persistReducer(rootPersistConfig, rootReducer)

@@ -51,26 +51,6 @@
 			margin-left: .8rem;
 		}
 	}
-
-	div.brand {
-		display: none;
-		position: absolute;
-		right: 0;
-		top: 1rem;
-		cursor: pointer;
-
-		span {
-			display: block;
-			width: 17px;
-			height: 2.5px;
-			background-color: white;
-			margin-bottom: 4px;
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-	}
 	
 	.title {
 		font-size: 1.22rem;

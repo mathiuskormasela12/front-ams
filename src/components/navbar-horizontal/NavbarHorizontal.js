@@ -1,7 +1,6 @@
 // ========== Navbar
 // import all modules
 import React, { Fragment } from 'react';
-import { useDispatch } from 'react-redux';
 
 // import all components
 import {
@@ -16,14 +15,6 @@ import styled from './style.module.scss';
 import user from '../../assets/img/10250.JPG';
 
 export function NavbarHorizontal(props) {
-	const dispatch = useDispatch();
-
-	const handleToggle = () => {
-		dispatch({
-			type: 'SET_TOGGLE'
-		})
-	}
-
 	return (
 		<Fragment>
 			<div className={styled['navbar-horizontal']}>
@@ -50,11 +41,6 @@ export function NavbarHorizontal(props) {
 								</form>
 							</li>
 						</ul>
-						<div className={styled.brand} onClick={handleToggle}>
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
 					</Container>
 				</nav>
 				<nav className={styled['nav-light']}>

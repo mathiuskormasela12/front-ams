@@ -8,7 +8,11 @@ import {
 	Sidebar,
 	Navbar,
 	Hero,
-	NavbarHorizontal
+	NavbarHorizontal,
+	DashboardContent,
+	Row,
+	Col,
+	Card
 } from '../components';
 
 class Dashboard extends Component {
@@ -25,6 +29,21 @@ class Dashboard extends Component {
 						<Sidebar>
 							<Container fluid>
 								<NavbarHorizontal title="Dashboard" show/>
+								<DashboardContent>
+									<Container width={95}>
+										<Row>
+											<Col xl={4} lg={4} sm={12}>
+												<Card title="Total Students" />
+											</Col>
+											<Col xl={4} lg={4} sm={12}>
+												<Card title="Total Users" />
+											</Col>
+											<Col xl={4} lg={4} sm={12}>
+												<Card title="Total Majors" />
+											</Col>
+										</Row>
+									</Container>
+								</DashboardContent>
 							</Container>
 						</Sidebar>
 					</Container>

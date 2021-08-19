@@ -1,0 +1,17 @@
+// ========== Layout Card
+
+div.card-component {
+	div.card {
+		background-color: white;
+		padding: 2rem 0;
+
+		header.card-header {
+			margin-bottom: 1rem;
+
+			h4.title {
+				color: $card-title-color;
+				font-size: 1.2rem !important;
+			}
+		}
+	}
+}

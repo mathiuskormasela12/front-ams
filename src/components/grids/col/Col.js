@@ -10,6 +10,7 @@ export function Col(props) {
 		<Fragment>
 			<div 
 				className={`
+					${props.xxl && styled[`col-xxl-${props.xxl}`]}
 					${props.xl && styled[`col-xl-${props.xl}`]}
 					${props.lg && styled[`col-lg-${props.lg}`]}
 					${props.sm && styled[`col-sm-${props.sm}`]}

@@ -1,385 +1,541 @@
 // ========== Layout Col
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	div.col-xs {
 		&-1 {
+			@include set-margin();
 			width: 7.33%;
 			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-2 {
-				width: 15.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 15.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-3 {
-				width: 24%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 24%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-4 {
-				width: 32.33%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 32.33%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-5 {
-				width: 40.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 40.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-6 {
-				width: 49%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 49%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-7 {
-				width: 57.33%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 57.33%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-8 {
-				width: 65.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 65.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-9 {
-				width: 74%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 74%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-10 {
-				width: 82.33%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 82.33%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-11 {
-				width: 90.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 90.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-12 {
-				width: 100%;
+			@include set-margin();
+			width: 100%;
 		}
 	}
 }
 
-@media screen and (min-width: 600px) and (max-width: 920px) {
+@media screen and (min-width: 768px) and (max-width: 920px) {
 	div.col-sm {
 		&-1 {
+			@include set-margin();
 			width: 7.33%;
 			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-2 {
-				width: 15.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 15.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-3 {
-				width: 24%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 24%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-4 {
-				width: 32.33%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 32.33%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-5 {
-				width: 40.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 40.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-6 {
-				width: 49%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 49%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-7 {
-				width: 57.33%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 57.33%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-8 {
-				width: 65.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 65.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-9 {
-				width: 74%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 74%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-10 {
-				width: 82.33%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 82.33%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-11 {
-				width: 90.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 90.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-12 {
-				width: 100%;
+			@include set-margin();
+			width: 100%;
 		}
 	}
 }
 
-@media screen and (min-width: 920px) and (max-width: 1400px) {
+@media screen and (min-width: 920px) and (max-width: 1200px) {
 	div.col-lg {
 		&-1 {
+			@include set-margin();
 			width: 7.33%;
 			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-2 {
-				width: 15.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 15.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-3 {
-				width: 24%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 24%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-4 {
-				width: 32.33%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 32.33%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-5 {
-				width: 40.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 40.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-6 {
-				width: 49%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 49%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-7 {
-				width: 57.33%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 57.33%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-8 {
-				width: 65.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 65.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-9 {
-				width: 74%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 74%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-10 {
-				width: 82.33%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 82.33%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-11 {
-				width: 90.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 90.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-12 {
-				width: 100%;
+			@include set-margin();
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+	div.col-xl {
+		&-1 {
+			@include set-margin();
+			width: 7.33%;
+			margin-right: 1%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-2 {
+			@include set-margin();
+			width: 15.66%;
+			margin-right: 1%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-3 {
+			@include set-margin();
+			width: 24%;
+			margin-right: 1%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-4 {
+			@include set-margin();
+			width: 32.33%;
+			margin-right: 1%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-5 {
+			@include set-margin();
+			width: 40.66%;
+			margin-right: 1%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-6 {
+			@include set-margin();
+			width: 49%;
+			margin-right: 1%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-7 {
+			@include set-margin();
+			width: 57.33%;
+			margin-right: 1%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-8 {
+			@include set-margin();
+			width: 65.66%;
+			margin-right: 1%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-9 {
+			@include set-margin();
+			width: 74%;
+			margin-right: 1%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-10 {
+			@include set-margin();
+			width: 82.33%;
+			margin-right: 1%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-11 {
+			@include set-margin();
+			width: 90.66%;
+			margin-right: 1%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-12 {
+			@include set-margin();
+			width: 100%;
 		}
 	}
 }
 
 @media screen and (min-width: 1400px) {
-	div.col-xl {
+	div.col-xxl {
 		&-1 {
+			@include set-margin();
 			width: 7.33%;
 			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-2 {
-				width: 15.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 15.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-3 {
-				width: 24%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 24%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-4 {
-				width: 32.33%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 32.33%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-5 {
-				width: 40.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 40.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-6 {
-				width: 49%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 49%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-7 {
-				width: 57.33%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 57.33%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-8 {
-				width: 65.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 65.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-9 {
-				width: 74%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 74%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-10 {
-				width: 82.33%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 82.33%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-11 {
-				width: 90.66%;
-				margin-right: 1%;
+			@include set-margin();
+			width: 90.66%;
+			margin-right: 1%;
 
-				&:last-child {
-					margin-right: 0;
-				}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		&-12 {
-				width: 100%;
+			@include set-margin();
+			width: 100%;
 		}
 	}
 }

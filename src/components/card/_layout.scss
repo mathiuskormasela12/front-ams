@@ -13,5 +13,88 @@ div.card-component {
 				font-size: 1.2rem !important;
 			}
 		}
+
+		main.card-content {
+			display: flex;
+			justify-content: space-between;
+
+			& > div.count > h6 {
+				font-weight: normal;
+			}
+			
+			& > div.count.purple-text {
+				color: $purple-text;
+			}
+
+			& > div.count.green-text {
+				color: $green-text;
+			}
+
+			& > div.count.blue-text {
+				color: $blue-text;
+			}
+
+			& div.diagram > span.purple-bar {
+				background-color: $purple;
+			}
+
+			& div.diagram > span.green-bar {
+				background-color: $green;
+			}
+
+			& div.diagram > span.blue-bar {
+				background-color: $blue;
+			}
+
+			%bar {
+				display: inline-block;
+				width: 4px;
+				margin-right: .2rem;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+
+			.bar-1 {
+				@extend %bar;
+				height: .1rem;
+			}
+
+			.bar-2 {
+				@extend %bar;
+				height: .6rem;
+			}
+
+			.bar-3 {
+				@extend %bar;
+				height: .8rem;
+			}
+
+			.bar-4 {
+				@extend %bar;
+				height: 1.2rem;
+			}
+
+			.bar-5 {
+				@extend %bar;
+				height: 1rem;
+			}
+
+			.bar-6 {
+				@extend %bar;
+				height: 1.4rem;
+			}
+
+			.bar-7 {
+				@extend %bar;
+				height: .5rem;
+			}
+
+			.bar-8 {
+				@extend %bar;
+				height: 1.1rem;
+			}
+		}
 	}
 }

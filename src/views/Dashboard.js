@@ -32,14 +32,14 @@ class Dashboard extends Component {
 								<DashboardContent>
 									<Container width={95}>
 										<Row>
-											<Col xl={4} lg={4} sm={12}>
-												<Card title="Total Students" />
+											<Col xxl={4} xl={4} lg={6} sm={12} xs={12}>
+												<Card title="Total Students" color="green" />
 											</Col>
-											<Col xl={4} lg={4} sm={12}>
-												<Card title="Total Users" />
+											<Col xxl={4} xl={4} lg={6} sm={12} xs={12}>
+												<Card title="Total Users" color="purple" />
 											</Col>
-											<Col xl={4} lg={4} sm={12}>
-												<Card title="Total Majors" />
+											<Col xxl={4} xl={4} lg={6} sm={12} xs={12}>
+												<Card title="Total Majors" color="blue" />
 											</Col>
 										</Row>
 									</Container>

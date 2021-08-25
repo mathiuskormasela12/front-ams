@@ -9,3 +9,6 @@ export * from './grids/row/Row';
 export * from './grids/col/Col';
 export * from './dashboard-content/DashboardContent';
 export * from './card/Card';
+export * from './hero-table/HeroTable';
+export * from './white-card/WhiteCard';
+export * from './card-header/CardHeader';

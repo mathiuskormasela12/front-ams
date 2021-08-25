@@ -1,4 +1,4 @@
-// ========== Home
+// ========== Dashboard
 // import all modules
 import React, { Component, Fragment } from 'react';
 
@@ -12,7 +12,10 @@ import {
 	DashboardContent,
 	Row,
 	Col,
-	Card
+	Card,
+	HeroTable,
+	WhiteCard,
+	CardHeader
 } from '../components';
 
 class Dashboard extends Component {
@@ -42,6 +45,17 @@ class Dashboard extends Component {
 												<Card title="Total Majors" color="blue" />
 											</Col>
 										</Row>
+										<HeroTable>
+											<Row>
+												<Col xxl={12} xl={12} lg={12} sm={12} xs={12}>
+													<WhiteCard>
+														<Container width={93}>
+															<CardHeader title="Show All Students" />
+														</Container>
+													</WhiteCard>
+												</Col>
+											</Row>
+										</HeroTable>
 									</Container>
 								</DashboardContent>
 							</Container>

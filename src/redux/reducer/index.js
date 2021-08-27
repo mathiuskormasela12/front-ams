@@ -7,11 +7,12 @@ import hardSet from 'redux-persist/es/stateReconciler/hardSet';
 
 // import all reducers
 import authReducer from './auth';
+import studentReducer from './student';
 
 const rootPersistConfig = {
 	key: 'root',
 	storage,
-	blacklist: ['auth', 'toggle'] 
+	blacklist: ['auth', 'toggle', 'student'] 
 }
 
 const authPersistConfig = {
@@ -22,6 +23,7 @@ const authPersistConfig = {
 
 const rootReducer = combineReducers({
 	auth: persistReducer(authPersistConfig, authReducer),
+	student: studentReducer
 });
 
 export default persistReducer(rootPersistConfig, rootReducer)

@@ -1,6 +1,7 @@
 // ========== Dashboard
 // import all modules
 import React, { Component, Fragment } from 'react';
+import { connect } from 'react-redux';
 
 // import all components
 import { 
@@ -15,12 +16,53 @@ import {
 	Card,
 	HeroTable,
 	WhiteCard,
-	CardHeader
+	CardHeader,
+	DataTable
 } from '../components';
+
+// import all actions
+import { setStudent, setLoading } from '../redux/action/student';
 
 class Dashboard extends Component {
 	componentDidMount() {
 		document.title = 'Ams | Dashboard';
+
+		const data = [
+			{
+				id: 1,
+				student_name: 'Mathius Kormasela',
+				nisn: '10250',
+				class: 'XII - RPL',
+				birthday: 'Jakarta, 04 Oktober 2002',
+				photo: 'http://localhost/public/photo.png',
+				report: 'http://localhost/public/photo.png',
+			},
+			{
+				id: 2,
+				student_name: 'Rizki Ramadhan',
+				nisn: '10266',
+				class: 'XII - RPL',
+				birthday: 'Jakarta, 05 November 2002',
+				photo: 'http://localhost/public/photo.png',
+				report: 'http://localhost/public/photo.png',
+			},
+			{
+				id: 3,
+				student_name: 'Fadhli Fadhilah',
+				nisn: '10232',
+				class: 'XII - RPL',
+				birthday: 'Jakarta, 21 February 2002',
+				photo: 'http://localhost/public/photo.png',
+				report: 'http://localhost/public/photo.png',
+			}
+		];
+		
+		this.props.setLoading();
+		setTimeout(() => {
+			this.props.setStudent(data);
+			this.props.setLoading();
+		}, 3000)
+
 	}
 	
 	render() {
@@ -51,6 +93,7 @@ class Dashboard extends Component {
 													<WhiteCard>
 														<Container width={93}>
 															<CardHeader title="Show All Students" />
+															<DataTable />
 														</Container>
 													</WhiteCard>
 												</Col>
@@ -67,4 +110,9 @@ class Dashboard extends Component {
 	}
 }
 
-export default Dashboard;
+const mapDispatchToProps = {
+	setStudent,
+	setLoading
+}
+
+export default connect(null, mapDispatchToProps)(Dashboard);

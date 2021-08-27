@@ -1,0 +1,103 @@
+// ========= Layout DataTable
+
+div.data-table {
+	overflow: hidden;
+
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	.table-container {
+		overflow-x: scroll;
+	}
+
+	table.table {
+		border-bottom: 1px solid $border-table;
+		border-collapse: collapse;
+		width: 80rem;
+
+		&, 
+		& thead,
+		& tr,
+		& th,
+		& td,
+		& tbody {
+			border-bottom: 1px solid $border-table;
+			padding: 1rem;
+		}
+
+		th:first-child {
+			width: 3%;
+		}
+
+		th:nth-child(2) {
+			width: 20%;
+		}
+
+		th:nth-child(3) {
+			width: 9%;
+		}
+
+		th:nth-child(4) {
+			width: 9%;
+		}
+
+		th:nth-child(5) {
+			width: 22%;
+		}
+
+		th:nth-child(6) {
+			width: 10%;
+		}
+
+		th:nth-child(7) {
+			width: 10%;
+		}
+
+		th:last-child {
+			width: 16%;
+		}
+
+		thead.thead {
+			color: #666666;
+			text-align: left;
+			padding: 1rem 0;
+			font-size: 1rem;
+		}
+
+		tbody.tbody {
+			color: #818181;
+			text-align: left;
+			padding: 1rem 0;
+			font-size: .9rem;
+		}
+
+		a.link {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		span.span-icon {
+			display: inline-flex;
+			align-items: center;
+			margin-right: .8rem;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		.icon {
+			font-size: 1.1rem;
+			margin-right: .5rem;
+		}
+
+		.edit {
+			color: #4CB7F9;
+		}
+
+		.delete {
+			color: #F85E6F;
+		}
+	}
+}

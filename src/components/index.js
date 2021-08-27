@@ -12,3 +12,4 @@ export * from './card/Card';
 export * from './hero-table/HeroTable';
 export * from './white-card/WhiteCard';
 export * from './card-header/CardHeader';
+export * from './data-table/DataTable';

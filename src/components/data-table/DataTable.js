@@ -1,7 +1,7 @@
 // ========== DataTable
 // import all modules
 import React, { Component, Fragment } from 'react';
-import { FaEdit, FaTrash } from 'react-icons/fa';
+import { FaEdit, FaTrash, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -70,6 +70,31 @@ class DataTableComponent extends Component {
 								}
 							</tbody>
 						</table>
+					</div>
+					<div class={styled['pagination-container']}>
+						<ul>
+							<li className={styled.pagination}>
+								<FaChevronLeft />
+							</li>
+							<li className={styled.pagination}>
+								1
+							</li>
+							<li className={`${styled.pagination} ${styled.active}`}>
+								2
+							</li>
+							<li className={styled.pagination}>
+								3
+							</li>
+							<li className={styled.pagination}>
+								4
+							</li>
+							<li className={styled.pagination}>
+								5
+							</li>
+							<li className={styled.pagination}>
+								<FaChevronRight />
+							</li>
+						</ul>
 					</div>
 				</div>
 			</Fragment>

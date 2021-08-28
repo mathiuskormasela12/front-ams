@@ -54,6 +54,24 @@ class Dashboard extends Component {
 				birthday: 'Jakarta, 21 February 2002',
 				photo: 'http://localhost/public/photo.png',
 				report: 'http://localhost/public/photo.png',
+			},
+			{
+				id: 4,
+				student_name: 'Riza Fahmi',
+				nisn: '10232',
+				class: 'XII - RPL',
+				birthday: 'Jakarta, 21 February 2002',
+				photo: 'http://localhost/public/photo.png',
+				report: 'http://localhost/public/photo.png',
+			},
+			{
+				id: 5,
+				student_name: 'Fadhli Fadhilah',
+				nisn: '10232',
+				class: 'XII - RPL',
+				birthday: 'Jakarta, 21 February 2002',
+				photo: 'http://localhost/public/photo.png',
+				report: 'http://localhost/public/photo.png',
 			}
 		];
 		

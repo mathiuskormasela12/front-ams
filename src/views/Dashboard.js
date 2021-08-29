@@ -111,7 +111,7 @@ class Dashboard extends Component {
 													<WhiteCard>
 														<Container width={93}>
 															<CardHeader title="Show All Students" />
-															<DataTable />
+															<DataTable {...this.props} />
 														</Container>
 													</WhiteCard>
 												</Col>

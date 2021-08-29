@@ -4,11 +4,42 @@ import React, { Component, Fragment } from 'react';
 import { FaEdit, FaTrash, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import getQuery from '../../helpers/getQuery';
 
 // import styles 
 import styled from './style.module.scss';
 
 class DataTableComponent extends Component {
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			page: Number(getQuery(this.props.location.search, 'page') || 1),
+			totalPage: 10,
+			offset: 0
+		}
+
+		this.handleNextPrevPage = this.handleNextPrevPage.bind(this);
+	}
+
+	handleNextPrevPage(name) {
+		this.setState(currentState => {
+			switch(name) {
+				case 'NEXT' : {
+					return {
+						offset: currentState.offset + 5
+					}
+				}
+
+				default : {
+					return {
+						offset: currentState.offset - 5
+					}
+				}
+			}
+		})
+	}
+
 	render() {
 		return (
 			<Fragment>
@@ -71,29 +102,47 @@ class DataTableComponent extends Component {
 							</tbody>
 						</table>
 					</div>
-					<div class={styled['pagination-container']}>
+					<div className={styled['pagination-container']}>
 						<ul>
-							<li className={styled.pagination}>
-								<FaChevronLeft />
-							</li>
-							<li className={styled.pagination}>
-								1
-							</li>
-							<li className={`${styled.pagination} ${styled.active}`}>
-								2
-							</li>
-							<li className={styled.pagination}>
-								3
-							</li>
-							<li className={styled.pagination}>
-								4
-							</li>
-							<li className={styled.pagination}>
-								5
-							</li>
-							<li className={styled.pagination}>
-								<FaChevronRight />
-							</li>
+							{
+								(this.state.page > this.state.totalPage) ? (
+									<li className={styled.pagination} onClick={() => this.handleNextPrevPage('PREV')}>
+										<FaChevronLeft />
+									</li>
+								) : (
+									<li className={styled.pagination}>
+										<FaChevronLeft />
+									</li>
+								)
+							}
+							{
+								[...Array(5)].map((item, index) => (
+									(this.state.page === (index + 1 + this.state.offset)) ? (
+										<Fragment key={String(index)}>
+											<li className={`${styled.pagination} ${styled.active}`}>
+												{ (index + 1 + this.state.offset) }
+											</li>
+										</Fragment>
+									) : (
+										<Fragment key={String(index)}>
+											<li className={styled.pagination}>
+												{ (index + 1 + this.state.offset) }
+											</li>
+										</Fragment>
+									)
+								))
+							}
+							{
+								(this.state.page < this.state.totalPage) ? (
+									<li className={styled.pagination} onClick={() => this.handleNextPrevPage('NEXT')}>
+										<FaChevronRight />
+									</li>
+								) : (
+									<li className={styled.pagination}>
+										<FaChevronRight />
+									</li>
+								)
+							}
 						</ul>
 					</div>
 				</div>

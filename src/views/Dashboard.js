@@ -17,7 +17,8 @@ import {
 	HeroTable,
 	WhiteCard,
 	CardHeader,
-	DataTable
+	DataTable,
+	Footer
 } from '../components';
 
 // import all actions
@@ -120,6 +121,7 @@ class Dashboard extends Component {
 									</Container>
 								</DashboardContent>
 							</Container>
+							<Footer />
 						</Sidebar>
 					</Container>
 				</Hero>

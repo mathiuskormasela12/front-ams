@@ -100,41 +100,4 @@ div.data-table {
 			color: #F85E6F;
 		}
 	}
-
-	div.pagination-container {
-		margin-top: 1.5rem;
-		display: flex;
-		justify-content: center;
-
-		ul {
-			display: flex;
-			list-style: none;
-
-			li.active {
-				background-color: #4CB7F9;
-				color: white;
-			}
-
-			li {
-				margin-right: .5rem;
-				border-radius: 50%;
-				cursor: pointer;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				color: #818181;
-				width: 2rem;
-				height: 2rem;
-				font-size: .9rem;
-
-				&:hover {
-					background-color: rgba(0, 0, 0, 0.1);
-				}
-
-				&:last-child {
-					margin-right: 0;
-				}
-			}
-		}
-	}
 }

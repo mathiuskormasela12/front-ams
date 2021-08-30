@@ -1,7 +1,7 @@
 // ========== DataTable
 // import all modules
 import React, { Component, Fragment } from 'react';
-import { FaEdit, FaTrash, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaEdit, FaTrash } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import getQuery from '../../helpers/getQuery';
@@ -101,49 +101,6 @@ class DataTableComponent extends Component {
 								}
 							</tbody>
 						</table>
-					</div>
-					<div className={styled['pagination-container']}>
-						<ul>
-							{
-								(this.state.page > this.state.totalPage) ? (
-									<li className={styled.pagination} onClick={() => this.handleNextPrevPage('PREV')}>
-										<FaChevronLeft />
-									</li>
-								) : (
-									<li className={styled.pagination}>
-										<FaChevronLeft />
-									</li>
-								)
-							}
-							{
-								[...Array(5)].map((item, index) => (
-									(this.state.page === (index + 1 + this.state.offset)) ? (
-										<Fragment key={String(index)}>
-											<li className={`${styled.pagination} ${styled.active}`}>
-												{ (index + 1 + this.state.offset) }
-											</li>
-										</Fragment>
-									) : (
-										<Fragment key={String(index)}>
-											<li className={styled.pagination}>
-												{ (index + 1 + this.state.offset) }
-											</li>
-										</Fragment>
-									)
-								))
-							}
-							{
-								(this.state.page < this.state.totalPage) ? (
-									<li className={styled.pagination} onClick={() => this.handleNextPrevPage('NEXT')}>
-										<FaChevronRight />
-									</li>
-								) : (
-									<li className={styled.pagination}>
-										<FaChevronRight />
-									</li>
-								)
-							}
-						</ul>
 					</div>
 				</div>
 			</Fragment>

@@ -15,6 +15,7 @@ export function Container(props) {
 						${!props.fluid && styled['normal-container']} 
 						${props.inheritWidth && styled['inherit-width']}
 						${props.inheritHeight && styled['inherit-height']}
+						${props.relative && styled.relative}
 					`}
 					style={{
 						width: `${props.width}%`
